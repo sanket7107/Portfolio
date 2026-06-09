@@ -567,18 +567,49 @@ body.dark-theme .contribution-card {
 }
 
 @media (max-width: 900px) {
+  .topbar,
+  .main-nav,
+  .section-card,
+  .footer {
+    margin: 0 18px 20px;
+    padding: 18px;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .topbar-actions {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .main-nav ul {
+    gap: 16px;
+  }
+
   .hero-section {
+    grid-template-columns: 1fr;
+    padding: 64px 18px 60px;
+  }
+
+  .hero-copy {
+    text-align: left;
+  }
+
+  .hero-photo {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .hero-stats {
     grid-template-columns: 1fr;
   }
 
   .contact-grid,
   .project-grid {
     grid-template-columns: 1fr;
-  }
-
-  .hero-photo {
-    max-width: 320px;
-    margin: 0 auto;
   }
 }
 
@@ -587,24 +618,47 @@ body.dark-theme .contribution-card {
   .main-nav,
   .section-card,
   .footer {
-    margin: 0 14px 20px;
-    padding: 20px;
+    margin: 0 14px 18px;
+    padding: 16px;
   }
 
   .hero-section {
-    padding: 56px 14px 72px;
+    padding: 50px 14px 56px;
   }
 
   .main-nav ul {
-    gap: 14px;
+    gap: 12px;
+  }
+
+  .main-nav a {
+    font-size: 0.95rem;
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.4rem, 8vw, 3.5rem);
+    font-size: clamp(2.4rem, 9vw, 3.3rem);
+  }
+
+  .hero-description,
+  .typing-text,
+  .hero-tagline {
+    font-size: 1rem;
   }
 
   .hero-actions {
     flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .section-header {
+    gap: 14px;
+  }
+
+  .contact-meta {
+    text-align: left;
   }
 }
 
@@ -613,20 +667,47 @@ body.dark-theme .contribution-card {
   .main-nav,
   .section-card,
   .footer {
-    margin: 0 10px 16px;
+    margin: 0 10px 14px;
+    padding: 14px;
   }
 
-  .filter-group {
-    justify-content: flex-start;
+  .hero-section {
+    padding: 44px 12px 48px;
   }
 
-  .hero-copy {
-    text-align: left;
+  .main-nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2rem, 11vw, 3rem);
+  }
+
+  .hero-description,
+  .typing-text,
+  .hero-tagline {
+    font-size: 0.98rem;
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    gap: 12px;
   }
 
   .project-card,
   .contact-form input,
-  .contact-form textarea {
+  .contact-form textarea,
+  .btn {
     font-size: 0.95rem;
+  }
+
+  .contact-grid,
+  .project-grid {
+    gap: 18px;
+  }
+
+  .contact-meta {
+    gap: 8px;
   }
 }
